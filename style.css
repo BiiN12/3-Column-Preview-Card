@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 15px;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-image: url(./images/layered-waves-haikei.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    backdrop-filter: blur(10px);
+    background-color: hsl(0, 1%, 24%);
+}
+
+.container {
+    max-width: 860px;
+    margin: 0 auto;
+    display: flex;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 15px 25px hsla(0, 0%, 0%, 0.8);
+}
+
+.card {
+    padding: 40px;
+}
+
+.card h1 {
+    font-family: 'Big Shoulders Display', cursive;
+    text-transform: uppercase;
+    font-size: 2.5rem;
+    color: hsl(0, 0%, 95%);
+    margin: 25px 0;
+}
+
+.card p {
+    color: hsla(0, 0%, 100%, 0.75);
+    line-height: 1.5;
+    margin-bottom: 50px;
+}
+
+.card1 {
+    background-color: hsl(31, 77%, 52%);
+}
+
+.card1 button {
+    color: hsl(31, 77%, 52%);
+}
+
+.card2 {
+    background-color: hsl(184, 100%, 22%);
+}
+
+.card2 button {
+    color: hsl(184, 100%, 22%);
+}
+
+.card3 {
+    background-color: hsl(179, 100%, 13%);
+}
+
+.card3 button {
+    color: hsl(179, 100%, 13%);
+}
+
+button {
+    padding: 15px 30px;
+    border-radius: 25px;
+    border: 2px solid hsl(0, 0%, 95%);
+    transition: 0.3s ease-in-out;
+}
+
+button:hover {
+    background-color: transparent;
+    color: hsl(0, 0%, 95%);
+    cursor: pointer;
+}
+
+
+
+@media (max-width: 768px) {
+    body {
+        background-image: url(./images/mobile.png);
+    }
+
+    .container {
+        flex-direction: column;
+        max-width: 425px;
+        margin: 1.5rem 1rem;
+    }
+}
