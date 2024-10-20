@@ -16,11 +16,6 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    /* background-image: url(./images/layered-waves-haikei.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    backdrop-filter: blur(10px); */
-    /* background-color: hsl(0, 1%, 24%); */
     background-color: hsl(0, 0%, 95%);
 }
 
@@ -29,8 +24,6 @@ body {
     margin: 0 auto;
     display: flex;
     border-radius: 15px;
-    /* overflow: hidden; */
-    /* box-shadow: 0 15px 25px hsla(0, 0%, 0%, 0.8); */
 }
 
 .card {
@@ -38,6 +31,7 @@ body {
     position: relative;
     transform: rotate(-2deg);
     border-radius: 15px;
+    transition: 0.3s;
 }
 
 .card:hover {
@@ -103,9 +97,6 @@ button:hover {
 
 
 @media (max-width: 768px) {
-    /* body {
-        background-image: url(./images/mobile.png);
-    } */
 
     .container {
         flex-direction: column;
