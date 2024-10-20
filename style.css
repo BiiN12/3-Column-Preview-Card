@@ -16,11 +16,12 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-image: url(./images/layered-waves-haikei.png);
+    /* background-image: url(./images/layered-waves-haikei.png);
     background-repeat: no-repeat;
     background-size: cover;
-    backdrop-filter: blur(10px);
-    background-color: hsl(0, 1%, 24%);
+    backdrop-filter: blur(10px); */
+    /* background-color: hsl(0, 1%, 24%); */
+    background-color: hsl(0, 0%, 95%);
 }
 
 .container {
@@ -28,12 +29,22 @@ body {
     margin: 0 auto;
     display: flex;
     border-radius: 15px;
-    overflow: hidden;
-    box-shadow: 0 15px 25px hsla(0, 0%, 0%, 0.8);
+    /* overflow: hidden; */
+    /* box-shadow: 0 15px 25px hsla(0, 0%, 0%, 0.8); */
 }
 
 .card {
     padding: 40px;
+    position: relative;
+    transform: rotate(-2deg);
+    border-radius: 15px;
+}
+
+.card:hover {
+    transform: rotate(0deg);
+    box-shadow: 0 15px 25px hsla(0, 0%, 0%, 0.8);
+    cursor: pointer;
+    z-index: 1;
 }
 
 .card h1 {
@@ -60,6 +71,7 @@ body {
 
 .card2 {
     background-color: hsl(184, 100%, 22%);
+    margin-left: -40px;
 }
 
 .card2 button {
@@ -68,6 +80,7 @@ body {
 
 .card3 {
     background-color: hsl(179, 100%, 13%);
+    margin-left: -40px;
 }
 
 .card3 button {
@@ -90,13 +103,26 @@ button:hover {
 
 
 @media (max-width: 768px) {
-    body {
+    /* body {
         background-image: url(./images/mobile.png);
-    }
+    } */
 
     .container {
         flex-direction: column;
         max-width: 425px;
         margin: 1.5rem 1rem;
+        border-radius: 15px;
+        overflow: hidden;
+    }
+
+    .card {
+        padding: 30px;
+        margin-left: 0;
+        transform: rotate(0deg);
+        border-radius: 0;
+    }
+
+    .card:hover {
+        box-shadow: none;
     }
 }
